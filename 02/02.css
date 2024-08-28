@@ -1,0 +1,19 @@
+HEADER{
+  background-color: aliceblue;
+}
+main{
+  background-color: aliceblue;
+}
+footer{
+  background-color: black;
+  color: white;
+}
+#menu > li {
+  background-color: blueviolet;
+}
+section {
+  background-color: white;
+}
+.section{
+  background-color: bisque;
+}
