@@ -1,0 +1,40 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  
+  box-sizing: border-box;
+}
+a{
+  text-decoration-line: none;
+  color: darkorchid;
+}
+/* a:link{
+  color:pink;
+} */
+
+header{
+  text-align: center;
+}
+
+body{
+  background-color: floralwhite;
+}
+
+.link_html>ul:hover {
+  background-color: black; 
+}
+
+
+.link_html>ul>li{
+  padding : 5%;
+  background-color: pink;
+  display: flex; 
+}
+
+
+header, body, footer {
+  width: 80%;
+  margin-left: 10%;
+  padding : 5%;
+}
+
