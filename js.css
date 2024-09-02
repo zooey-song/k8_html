@@ -1,0 +1,55 @@
+*{
+  padding:0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header, main {
+  width: 60%;
+  margin-left: 20%;
+  
+  display: flex;
+  justify-content:  center;
+}
+
+header {
+  height:80px;
+  background-color: coral;
+  color: white;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header img {
+  width: 20px;
+  height: 20px;
+}
+main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height : 500px;
+  border: 1px dotted darkblue;
+}
+button {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: violet;
+  color:white;
+
+  border:none;
+
+}
+section{
+  margin : 5px
+}
+section .div{
+  height : 50px
+}
+
+button:hover{
+  background-color: white;
+  color: black;
+}
