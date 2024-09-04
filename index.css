@@ -6,11 +6,9 @@
 }
 a{
   text-decoration-line: none;
-  color: darkorchid;
+  color: rgb(98, 61, 117);
 }
-/* a:link{
-  color:pink;
-} */
+
 
 header{
   text-align: center;
