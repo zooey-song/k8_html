@@ -19,14 +19,16 @@ body{
 }
 
 .link_html>ul:hover {
-  background-color: black; 
+  background-color: cornsilk; 
 }
 
 
 .link_html>ul>li{
   padding : 5%;
   background-color: pink;
-  display: flex; 
+  display: flex;
+  border-radius: 3px;
+  
 }
 
 
