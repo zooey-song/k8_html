@@ -5,40 +5,48 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const bts = document.querySelectorAll('button') ;
   //결과 가져오기 
   const msg = document.querySelector('secDice') ;
-
+  
   //console.log(bts);
-  const random_wide = 100;
-  const randomN = Math.floor(Math.random() * random_wide)+1;
-  const MIN_num = 0;
-  const MAX_num = random_wide;
-  const mode = "start";
-
+  const random_wide = 10;
+  let randomN = Math.floor(Math.random() * random_wide)+1;
+  let flag = true;
+  
   //버튼 클릭
   bts[0].addEventListener('click', (e)=>{
     e.preventDefault();
-    
     const inputN = document.getElementById("txt1").value;
-    if (mode === "start"){
-      
+    
+    if (!flag){
+      console.log('다시시작');
 
-    }else{
-
-    }
-
-    if (inputN > randomN){
-        imgs[0].setAttribute('src',`../img/down.png`);
-      MAX_num = inputN;
-    }
-    else if(inputN < randomN){
-        imgs[0].setAttribute('src',`../img/up.png`);
-      MIN_num = inputN;
-    }
-    else if(inputN == randomN){
-      imgs[0].setAttribute('src',`../img/good.png`);
+      imgs[0].setAttribute('src',`../img/what.png`);
       randomN = Math.floor(Math.random() * random_wide)+1;
+      txt1.style.display = 'inline';
+      txt1.value = '';
+      bts[0].innerHTML = '확인';
+      flag = true;
       
     }
+    else{
+      console.log("시작",randomN);
 
+      if (inputN > randomN){
+        imgs[0].setAttribute('src',`../img/down.png`);
+        //MAX_num = inputN;
+      }
+      else if(inputN < randomN){
+        imgs[0].setAttribute('src',`../img/up.png`);
+        //MIN_num = inputN;
+      }
+      else if(inputN == randomN){
+        imgs[0].setAttribute('src',`../img/good.png`);
+        txt1.style.display = 'none';
+        txt1.focus();
+        bts[0].innerHTML = '번호를 다시 생성하세요';
+        inputN.value = '';
+        flag = false;
+      }
+  }
 
 
   });
