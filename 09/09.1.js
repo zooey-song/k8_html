@@ -21,11 +21,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
     s2= s1.split('').reverse().join('');
 
 
+
     console.log("s1 ",s1);
     console.log("s2 ",s2);
 
-    if(s1 == s2) txt2.value='회문입니다.'
-    else txt2.value="회문이 아닙니다."
+    if(s1.length == '') txt2.value="문자가 없습니다."
+    else{
+      if(s1 == s2) txt2.value='회문입니다.'
+      else{
+      txt2.value="회문이 아닙니다."
+      }  
+    }
 
     txt1.focus();
   });
