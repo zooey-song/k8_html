@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  for (let bt of secBt) {
+  for (let bt of secBt) { 
     bt.addEventListener('click', (e) => {
       e.preventDefault();
       let addItem = bt.innerHTML.replace('추가', '');

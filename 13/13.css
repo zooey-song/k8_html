@@ -1,0 +1,68 @@
+#boxofficeMain{
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+}
+
+.sec{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.divDt{
+  width:80%;
+  height : 60px;
+  flex-direction: row;
+  
+  background-color: bisque;
+  border: 1px dotted gray;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=date]{
+  width:40%;
+  height: 30px;
+}
+
+li{
+  list-style:  none;
+  
+}
+
+.mvli{
+  width:100%;
+  height:40px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mvli:hover{
+  background-color: blueviolet;
+  border-bottom: 1px, solid blue;
+}
+
+.rank{
+  width:40px;
+  height:40px;
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5px,2px;
+
+  background-color: blue;
+  color:white;
+  border-radius:10%;
+  margin-right: 10px;
+}
