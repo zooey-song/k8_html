@@ -28,7 +28,7 @@
   align-items: center;
 }
 
-input[type=date]{
+input[type=date], sel1{
   width:40%;
   height: 30px;
 }
