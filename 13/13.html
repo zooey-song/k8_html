@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet"  type="text/css" href="../js.css"> 
-  <link rel="stylesheet"  type="text/css" href="./13.css">
+  <link rel="stylesheet"  type="text/css" href="./13.css"> 
   <title>JS기초</title>
    
   <!-- 외부 스크립트 -->
@@ -13,37 +13,37 @@
 <form>
 <body>
   <header>
-    <h1>박스오피스</h1>
+    <h1>자바스크립트 업다운게임</h1>
     <div>
       <a href='../index.html'><img src='../img/home.png' id='home'></a>
     </div>
   </header>
-  <main id = 'boxofficeMain'>
-    <section class = 'sec'>
-      <div class="divDt"> 
-        <!-- <input type = 'date' id = 'dt' name='dt' max="2024-10-10" min="2024-09-09"> -->
-        <input type = 'date' id = 'dt' name='dt'>
-        <select id='sel1' name="sel1">
-          <option value="K">한국영화</option>
-          <option value="F" selected>외국영화</option>
-          <option value="default" selected>전체</option>
-        </select>
-
-        <div id='sel1' name="sel1">
-          <label fpr = 'r1'> 한국영화</label>
-          <option value="r2" >외국영화</option>
-          <option value="r3" selected>전체</option>
+  <main>
+    <div id="top">
+      <section class = 'col'>
+        <div class = 'box'>1</div>
+        <div class = 'box'>2</div>
+        <div class = 'box'>3</div>
+        </section>
+      <section class = 'col'>
+       <div class = 'box'>4</div>
+        <div class = 'box'>5</div>
+        <div class = 'box'>6</div>
+        </section>
+        <section class = 'col'>
+        <div class = 'box'>7</div>
+        <div class = 'box'>8</div>
+        <div class = 'box'>9</div>
+        </section>
+        <section>
+          <div >
+           <button id="bt">시작하기</button> 
+          </div>
+          <div id = 'msg'>
+          </div>
+        </section>
         </div>
-
-
-      </div>
-    </section>
-    <section class = 'sec'>
-      <ul >
-        
-    </ul>
-    </section>
-  </main>
-</form>
-</body>
+      </main>
+    </form>
+  </body>
 </html>
